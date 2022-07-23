@@ -7,7 +7,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
-<script src="https://kit.fontawesome.com/f32863b60d.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <!-- header -->
@@ -15,7 +14,6 @@
     <nav>
       <a href="index.html"><img id="logo" src="assets/book_logo.png" alt="book store logo"></a>
       <div class="nav-links" id="navLinks">
-        <i class="fa fa-xmark" onclick="hideMenu()"></i>
         <ul>
           <li><a href="index.html">HOME</a></li>
           <li><a href="finance.html">ADVENTUROUS</a></li>
@@ -23,7 +21,6 @@
           <li><a href="">CONTACT US</a></li>
         </ul>
       </div>
-      <i class="fa fa-bars" onclick="showMenu()"></i>
     </nav>
   <div class="welcome-text-box">
     <h1>Rich Dad Poor Dad(Robert Kiosaki)</h1>
@@ -57,7 +54,7 @@
         </div>
 
         <div class="form-element">
-          <label for="contact-method">How can we contact you:</label>
+          <p>How can we contact you:</p>
           <div>
             <input type="checkbox" id="contact-method" name="email" value="contact-method">
             <label for="contact-method">By email</label>
@@ -70,7 +67,7 @@
         </div>
 
         <div class="form-element">
-          <label for="newsletter">Do you want to receive our newsletter:</label>
+          <p>Do you want to receive our newsletter:</p>
           <div>
             <input type="radio" id="newsletter" name="newsletter" value="Yes" checked="checked">
             <label for="yes">Yes</label>
@@ -83,13 +80,14 @@
 
         <div class="form-element">
           <label for="note">Note: </label><br>
-          <textarea name="message" rows="10" cols="30"></textarea>
+          <textarea id="note" name="message" rows="10" cols="30"></textarea>
         </div>
+
         <div class="form-element">
           <div></div>
-          <div>
-            <input type="submit" value="Submit">
-            <input type="reset" value="Reset">
+          <div class="form-btn">
+            <input type="submit" value="Submit" id="submit">
+            <input type="reset" value="Reset" id="reset">
           </div>
         </div>
       </form> 
